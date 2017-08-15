@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D7459901F430A9A00DE23B0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4D74598F1F430A9A00DE23B0 /* README.md */; };
 		4D9709661F3FA24300D0DB03 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D9709651F3FA24300D0DB03 /* main.cpp */; };
 		4D9709D71F403A4800D0DB03 /* libopencv_calib3d.3.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D97096F1F3FA31200D0DB03 /* libopencv_calib3d.3.3.0.dylib */; };
 		4D9709D81F403A4800D0DB03 /* libopencv_calib3d.3.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D97096F1F3FA31200D0DB03 /* libopencv_calib3d.3.3.0.dylib */; };
@@ -76,6 +77,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D74598F1F430A9A00DE23B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4D9709621F3FA24300D0DB03 /* testCV */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testCV; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9709651F3FA24300D0DB03 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4D97096D1F3FA31200D0DB03 /* libopencv_calib3d.3.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_calib3d.3.3.0.dylib; path = ../../../../../usr/local/Cellar/opencv3/3.3.0_1/lib/libopencv_calib3d.3.3.0.dylib; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		4D9709591F3FA24300D0DB03 = {
 			isa = PBXGroup;
 			children = (
+				4D74598F1F430A9A00DE23B0 /* README.md */,
 				4D9709641F3FA24300D0DB03 /* testCV */,
 				4D9709631F3FA24300D0DB03 /* Products */,
 				4D97096C1F3FA31100D0DB03 /* Frameworks */,
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7459901F430A9A00DE23B0 /* README.md in Sources */,
 				4D9709661F3FA24300D0DB03 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +484,7 @@
 				4D97096B1F3FA24300D0DB03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
