@@ -78,6 +78,7 @@
 
 /* Begin PBXFileReference section */
 		4D74598F1F430A9A00DE23B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4D7459921F430FE900DE23B0 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
 		4D9709621F3FA24300D0DB03 /* testCV */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testCV; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9709651F3FA24300D0DB03 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4D97096D1F3FA31200D0DB03 /* libopencv_calib3d.3.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_calib3d.3.3.0.dylib; path = ../../../../../usr/local/Cellar/opencv3/3.3.0_1/lib/libopencv_calib3d.3.3.0.dylib; sourceTree = "<group>"; };
@@ -220,6 +221,7 @@
 		4D9709641F3FA24300D0DB03 /* testCV */ = {
 			isa = PBXGroup;
 			children = (
+				4D7459921F430FE900DE23B0 /* a.png */,
 				4D9709651F3FA24300D0DB03 /* main.cpp */,
 			);
 			path = testCV;
