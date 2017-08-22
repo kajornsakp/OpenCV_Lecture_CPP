@@ -24,7 +24,32 @@ void imgNegative(const cv::Mat& inImg, cv::Mat& outImg) {
             outImg.at<uchar>(i,j) = 255 - inImg.at<uchar>(i,j);
 }
 
+void getHistogram(const cv::Mat& img, cv::Mat& hist) {
+    //create histogram and initialize all bins to zero
+    hist = cv::Mat::zeros(1, 256, CV_32S);
+    
+    for(int i = 0; i < img.rows; ++i)
+        for(int j = 0; j < img.cols; ++j) {
+            uchar val = img.at<uchar>(i,j);
+            hist.at<int>( val )++;
+        }
+}
 
+void drawHistogram(const cv::Mat& hist, cv::Mat& histImg) {
+    //create image and initialize all pixels to white
+    const int histSize = 256;
+    histImg = cv::Mat( 256, 256, CV_8U, 255);
+    //find max value of histogram
+    double minVal, maxVal;
+    cv::minMaxLoc(hist, &minVal, &maxVal, NULL, NULL);
+    for(int i = 0; i < 256; ++i) {
+        int height = hist.at<int>(i) * histSize / maxVal;
+        cv::line(histImg, /*image to draw*/
+                 cv::Point(i, histSize), /*start point*/
+                 cv::Point(i, histSize - height), /*end point*/
+                 0); /*line color*/
+    }
+}
 
 int main( int argc, const char** argv )
 {
@@ -93,6 +118,20 @@ int main( int argc, const char** argv )
 //
 //    
 //    
-//    
-//    return 0;
+//
+    
+    
+    //histogram
+    
+    cv::Mat inImg = cv::imread("test_img.jpg", CV_LOAD_IMAGE_GRAYSCALE);
+    //calculate histogram from input image
+    cv::Mat hist;
+    getHistogram(inImg, hist);
+    //draw and display histogram
+    cv::Mat histImg;
+    drawHistogram(hist, histImg);
+    cv::imshow("Histogram", histImg);
+    cv::waitKey();
+    
+    return 0;
 }

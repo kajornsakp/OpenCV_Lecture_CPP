@@ -134,6 +134,7 @@
 		4D97099F1F3FA31200D0DB03 /* libopencv_videostab.3.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videostab.3.3.0.dylib; path = ../../../../../usr/local/Cellar/opencv3/3.3.0_1/lib/libopencv_videostab.3.3.0.dylib; sourceTree = "<group>"; };
 		4D9709A01F3FA31200D0DB03 /* pkgconfig */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pkgconfig; path = ../../../../../usr/local/Cellar/opencv3/3.3.0_1/lib/pkgconfig; sourceTree = "<group>"; };
 		4D9709A11F3FA31200D0DB03 /* python2.7 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = python2.7; path = ../../../../../usr/local/Cellar/opencv3/3.3.0_1/lib/python2.7; sourceTree = "<group>"; };
+		4DD77B891F4C509C005B9AB1 /* test_img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_img.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				4D7459921F430FE900DE23B0 /* a.png */,
+				4DD77B891F4C509C005B9AB1 /* test_img.jpg */,
 				4D9709651F3FA24300D0DB03 /* main.cpp */,
 			);
 			path = testCV;
