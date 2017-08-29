@@ -123,14 +123,23 @@ int main( int argc, const char** argv )
     
     //histogram
     
-    cv::Mat inImg = cv::imread("test_img.jpg", CV_LOAD_IMAGE_GRAYSCALE);
-    //calculate histogram from input image
-    cv::Mat hist;
-    getHistogram(inImg, hist);
-    //draw and display histogram
-    cv::Mat histImg;
-    drawHistogram(hist, histImg);
-    cv::imshow("Histogram", histImg);
+//    cv::Mat inImg = cv::imread("test_img.jpg", CV_LOAD_IMAGE_GRAYSCALE);
+//    //calculate histogram from input image
+//    cv::Mat hist;
+//    getHistogram(inImg, hist);
+//    //draw and display histogram
+//    cv::Mat histImg;
+//    drawHistogram(hist, histImg);
+//    cv::imshow("Histogram", histImg);
+//    cv::waitKey();
+    
+    //histogram equalization
+    cv::Mat inImg = cv::imread("test_img.jpg",CV_LOAD_IMAGE_GRAYSCALE);
+    cv::resize(inImg, inImg, cv::Size(0,0),0.2,0.2);
+    cv::Mat outImg;
+    cv::equalizeHist(inImg, outImg);
+    cv::imshow("input", inImg);
+    cv::imshow("output", outImg);
     cv::waitKey();
     
     return 0;
